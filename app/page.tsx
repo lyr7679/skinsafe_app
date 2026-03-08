@@ -19,7 +19,8 @@ interface SuggestResponse {
   og_alt_ingr: string[]
 }
 
-const GIN_URL = "http://localhost:8081"
+//const GIN_URL = "http://localhost:8081"
+const GIN_URL = process.env.NEXT_PUBLIC_GIN_URL || "http://localhost:8081"
 
 export default function Home() {
   // --- state ---
